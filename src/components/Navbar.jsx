@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../images/logo.png';
 import styled from 'styled-components';
+import banner from '../images/banner.png';
 
 const Nav = styled('nav')`
 display:flex;
@@ -30,6 +31,7 @@ height: 30px;
         width: 25px;
         height: 25px;
     }
+    
 `
 
 const Ul = styled('ul')`
@@ -60,6 +62,8 @@ const Navbar = () => {
             <Form>
                 <input type="search" placeholder='Search...' />
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxqKOlCaIC1E0SZvSHOdTcqjgyikklFCs8qKZhKkHEg&s" alt="" />
+                
+                
 
 
             </Form>
@@ -69,6 +73,7 @@ const Navbar = () => {
                 <li><Link href="">Contact us</Link></li>
             </Ul>
         </Nav>
+        
     )
 }
 
