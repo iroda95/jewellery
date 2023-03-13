@@ -37,21 +37,20 @@ height: 30px;
 const Ul = styled('ul')`
     display: flex;
     list-style: none;
-`
-
-const Link = styled('a')`
-margin: 20px;
+    gap: 3em;
     font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 17px;
-display: flex;
-align-items: center;
-
-color: #494848;
-text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #494848;
+    text-decoration: none;
 `
+
+const Link = styled('a')``
+
 
 const Navbar = () => {
     return (

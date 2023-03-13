@@ -9,47 +9,24 @@ const Img = styled('img')`
     height: 500px;
     object-fit: cover;
     padding:2rem;
+    margin: 0 auto;
     
 `
-
-const Text = styled('p')`
-    font-family: 'sans-serif';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.01em;
-    width: 400px;
-`
 const Container = styled('div')`
+    width: 100%;
+    height: 500px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-`
-
-const Button = styled('button')`
-    background-color: #46c2eb;
-    padding: 0.3rem 0.5rem;
-    border: none;
-    border-radius:10px;
-    color: white;
-    &:hover{
-        background-color: grey;
-    }
 `
 
 const Banner = () => {
-return(
+
+    return(
     <Container>
         <Img src={img} alt="" />
-        <Text>We sell exquisite jewellery that complements you.      
-        Contact us for amazing offers.</Text>
-        <Button>Start shopping</Button>
     </Container>
-)
+    )
 }
 
 export default Banner
