@@ -1,5 +1,5 @@
 import React from "react"
-import data from "./data"
+import { data, neckleces, bracelets,  } from "./data"
 import styled from "styled-components"
 
 const Text = styled("h2")`
@@ -57,6 +57,16 @@ const Abc = styled("p")`
   line-height: 29px;
 `
 
+const Text2 = styled("p")`
+  font-family: "Ubuntu";
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+`
+
 const Card = styled("div")`
   border: 0.7px solid antiquewhite;
   border-radius: 10px;
@@ -105,6 +115,33 @@ const Products = () => {
           </Card>
         ))}
       </Box>
+
+      <Text2>Necklaces</Text2>
+      <Box>
+        {neckleces.map((item, index) => (
+          <Card key={index}>
+            <Img src={item.img} alt="" />
+            <h1>{item.title}</h1>
+            <p>{item.price}</p>
+            <CardButton>Buy Now</CardButton>
+          </Card>
+        ))}
+      </Box>
+
+      <Text2>Bracelets</Text2>
+      <Box>
+        {bracelets.map((item, index) => (
+          <Card key={index}>
+            <Img src={item.img} alt="" />
+            <h1>{item.title}</h1>
+            <p>{item.price}</p>
+            <CardButton>Buy Now</CardButton>
+          </Card>
+        ))}
+      </Box>
+
+      
+    
     </section>
   )
 }
