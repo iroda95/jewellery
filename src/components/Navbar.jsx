@@ -50,7 +50,7 @@ const Ul = styled("ul")`
 
 const Links = styled(Link)`
   font-size: 20px;
-  color: gren;
+  color: green;
 `
 
 const Navbar = () => {
@@ -68,10 +68,7 @@ const Navbar = () => {
       </Form>
       <Ul>
         <li>
-          <Links to="">Our products</Links>
-        </li>
-        <li>
-          <Links to="/about">About us</Links>
+          <Links to="/">Our products</Links>
         </li>
         <li>
           <Links to="/">Contact us</Links>
