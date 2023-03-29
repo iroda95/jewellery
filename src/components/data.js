@@ -42,7 +42,7 @@ export const neckleces = [
         title: "White feather  ",
         price: 'Price: Kshs 350'
     },{
-        img:'/images/img9.png',
+        img:'/images/Rectangle 6.png',
         title: "Leaf necklaces ",
         price: 'Price: Kshs 400'
 

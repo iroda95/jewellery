@@ -68,10 +68,10 @@ const Navbar = () => {
       </Form>
       <Ul>
         <li>
-          <Links to="/">Our products</Links>
+          <Links to="/our_products">Our products</Links>
         </li>
         <li>
-          <Links to="/">Contact us</Links>
+          <Links to="/contact">Contact us</Links>
         </li>
       </Ul>
     </Nav>
