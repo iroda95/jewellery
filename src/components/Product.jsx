@@ -1,5 +1,5 @@
 import React from "react"
-import { data, neckleces, bracelets,  } from "./data"
+import { data, neckleces, bracelets } from "./data"
 import styled from "styled-components"
 
 const Text = styled("h2")`
@@ -76,9 +76,13 @@ const Card = styled("div")`
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all .5s;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 0px 30px 5px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 0px 30px 5px rgba(34, 60, 80, 0.2);
+  &:hover {
+    transform: scale(103%, 103%);
+  }
 `
 const Img = styled("img")`
   width: 100%;
@@ -97,11 +101,9 @@ const Products = () => {
   return (
     <section>
       <Block>
-        <Text>
-          We sell exquisite jewellery that complements you. Contact us for
-          amazing offers.
-        </Text>
-        <Button>start shopping</Button>
+        <Text>We sell exquisite jewellery that complements you.
+Contact us for amazing offers</Text>
+<Button>Start Shopping</Button>
         <Abc>Earrings</Abc>
       </Block>
 
@@ -139,9 +141,6 @@ const Products = () => {
           </Card>
         ))}
       </Box>
-
-      
-    
     </section>
   )
 }
