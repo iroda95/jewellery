@@ -2,7 +2,7 @@ import React from "react"
 import logo from "../images/logo.png"
 import styled from "styled-components"
 import banner from "../images/banner.png"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const Nav = styled("nav")`
   display: flex;
@@ -49,11 +49,12 @@ const Ul = styled("ul")`
 `
 
 const Links = styled(Link)`
-  font-size: 20px;
+  font-size:14px;
   color: green;
 `
 
 const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <Nav>
       <Link to="/">
@@ -73,8 +74,12 @@ const Navbar = () => {
         <li>
           <Links to="/contact">Contact us</Links>
         </li>
+        <li>
+          <Link to={'/signin'}>Sign in</Link>
+        </li>
       </Ul>
     </Nav>
+    
   )
 }
 

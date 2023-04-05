@@ -6,11 +6,11 @@ export const data = [
         
     },{
         img:'/images/img1.png',
-        title: "Blue feather earrings ",
+        title: "White feather earrings ",
         price: 'Price: Kshs 250'
     },{
         img:'/images/img2.png',
-        title: "Blue feather earrings ",
+        title: "Grey earrings ",
         price: 'Price: Kshs 250'
     },{
         img:'/images/img3.png',

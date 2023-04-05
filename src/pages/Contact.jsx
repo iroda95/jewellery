@@ -14,10 +14,12 @@ const SocialNetworks = styled("div")`
 const Text = styled("h2")`
   margin: 0;
 `
+
 const Container = styled("div")`
   display: flex;
   flex-direction: column;
 `
+
 const Map = styled("div")``
 const Contacts = styled("div")`
   display: flex;
