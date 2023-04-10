@@ -2,17 +2,7 @@ import React from "react"
 import { data, neckleces, bracelets } from "./data"
 import styled from "styled-components"
 
-const Text = styled("h2")`
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
 
-  letter-spacing: 0.01em;
-
-  color: #494848;
-`
 
 const Box = styled("div")`
   display: flex;
@@ -31,22 +21,7 @@ const Block = styled("div")`
   margin: 0 auto;
 `
 
-const Button = styled("button")`
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  color: white;
-  border: none;
-  background-color: #3ab6cc;
-  width: 150px;
-  height: 40px;
-  border-radius: 4px;
 
-  &:hover {
-    background-color: grey;
-  }
-`
 
 const Abc = styled("p")`
   font-family: "Ubuntu";
@@ -100,12 +75,10 @@ const CardButton = styled("button")`
 const Products = () => {
   return (
     <section>
-      <Block>
-        <Text>We sell exquisite jewellery that complements you.
-Contact us for amazing offers</Text>
-<Button>Start Shopping</Button>
-        <Abc>Earrings</Abc>
-      </Block>
+      
+       
+        <Text2>Earrings</Text2>
+     
 
       <Box>
         {data.map((item, index) => (

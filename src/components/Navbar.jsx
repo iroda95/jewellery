@@ -10,7 +10,6 @@ const Nav = styled("nav")`
   align-items: center;
   padding: 20px 30px;
 `
-
 const Form = styled("form")`
   display: flex;
   align-items: center;
@@ -26,13 +25,11 @@ const Form = styled("form")`
   & input {
     border: none;
   }
-
   & img {
     width: 25px;
     height: 25px;
   }
 `
-
 const Ul = styled("ul")`
   display: flex;
   list-style: none;
@@ -47,12 +44,10 @@ const Ul = styled("ul")`
   color: #494848;
   text-decoration: none;
 `
-
 const Links = styled(Link)`
   font-size:14px;
   color: green;
 `
-
 const Navbar = () => {
   const navigate = useNavigate()
   return (
@@ -78,9 +73,7 @@ const Navbar = () => {
           <Link to={'/signin'}>Sign in</Link>
         </li>
       </Ul>
-    </Nav>
-    
+    </Nav>   
   )
 }
-
 export default Navbar
