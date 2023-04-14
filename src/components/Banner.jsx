@@ -41,6 +41,7 @@ const Button = styled("button")`
   width: 150px;
   height: 40px;
   border-radius: 4px;
+  transition: 0.4s;
 
   &:hover {
     background-color: grey;

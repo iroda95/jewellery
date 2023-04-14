@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 
 
+
 const Box = styled("div")`
   display: flex;
   align-items: center;
@@ -67,6 +68,7 @@ const CardButton = styled("button")`
   background-color: #3ab6cc;
   border-radius: 10px;
   padding: 5px 1rem;
+  transition: 0.4s;
   &:hover {
     background-color: grey;
   }

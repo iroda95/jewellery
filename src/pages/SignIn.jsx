@@ -3,6 +3,9 @@ import styled from "styled-components"
 import { BsFacebook } from "react-icons/bs"
 import { AiFillTwitterCircle } from "react-icons/ai"
 import { ImGoogle3 } from "react-icons/im"
+import { Link, useNavigate } from "react-router-dom"
+import { auth, provider } from "../config"
+import { signInWithPopup } from "firebase/auth"
 
 const Container = styled("div")`
   display: flex;
@@ -13,7 +16,7 @@ const Container = styled("div")`
 const Input = styled("input")`
   width: 500px;
   height: 30px;
-  padding: 5px;
+  padding: 15px 20px;
   border-radius: 8px;
 `
 const Form = styled("form")`
@@ -28,15 +31,25 @@ const Form = styled("form")`
 const Label = styled("label")`
   margin-top: 10px;
 `
-const Button = styled("button")`
+const Button = styled(Link)`
   background-color: #5bb872;
   margin: 30px;
   margin-left: 100px;
   width: 300px;
-  height: 30px;
+  height: 45px;
+  /* text-align:center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
   border-radius: 10px;
+  transition: 0.4s;
+  font-weight: 500;
+
   &:hover {
-    background-color: grey;
+    background-color: #508b5f;
+    color: #fff;
   }
 `
 const Text = styled("p")`
@@ -53,21 +66,28 @@ const SocialNetworks = styled("div")`
 `
 
 const Logo = styled("div")`
+  transition: 0.5s;
   &:hover {
-    color: green;
+    color: #039303;
   }
 `
 
-const login = () => {
+const login = ({ isAuth }) => {
+  const signInWithGoogle = () => {
+    signInWithPopup(auth, provider).then((result) => {
+      localStorage.setItem("Auth", true)
+      isAuth(true)
+    })
+  }
   return (
     <Container>
       <Form>
         <Label for="email">Введите свой email адрес</Label>
-        <Input placeholder="email" />
+        <Input placeholder="Email" />
         <Label for="password">Введите пароль</Label>
-        <Input type="password" />
+        <Input type="password" placeholder="Password" />
         <Text>Forgot password?</Text>
-        <Button>Log in</Button>
+        <Button to="/">Log in</Button>
         <Text1>Or sign up using</Text1>
 
         <SocialNetworks>
@@ -77,7 +97,7 @@ const login = () => {
           <Logo>
             <AiFillTwitterCircle size={45} />
           </Logo>
-          <Logo>
+          <Logo onClick={signInWithGoogle}>
             <ImGoogle3 size={40} />
           </Logo>
         </SocialNetworks>
