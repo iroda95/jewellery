@@ -64,6 +64,9 @@ const Navbar = () => {
       </Form>
       <Ul>
         <li>
+          <Links to="/">Home</Links>
+        </li>
+        <li>
           <Links to="/our_products">Our products</Links>
         </li>
         <li>

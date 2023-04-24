@@ -5,6 +5,7 @@ import Products from "./components/Product"
 import SignIn from "./pages/SignIn"
 import { useState } from "react"
 import { auth } from "./config"
+import Footer from "./components/Footer"
 
 import Navbar from "./components/Navbar"
 function App() {
