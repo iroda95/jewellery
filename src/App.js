@@ -20,6 +20,7 @@ function App() {
           <Route path="/our_products" element={<Products />} />
           <Route path="/signin" element={<SignIn setIsAuth={setIsAuth} />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )
