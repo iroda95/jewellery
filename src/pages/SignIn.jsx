@@ -23,7 +23,7 @@ const Input = styled("input")`
 const Form = styled("form")`
   display: flex;
   margin-top: 70px;
-  background-color: #6b6e6e2e;
+  background-color: #e0d5bf;
   flex-direction: column;
   border-radius: 8px;
   padding: 40px;
@@ -33,7 +33,7 @@ const Label = styled("label")`
   margin-top: 10px;
 `
 const Button = styled(Link)`
-  background-color: #3e37378e;
+  background-color: #83725d;
   margin: 30px;
   margin-left: 100px;
   width: 300px;
@@ -69,7 +69,7 @@ const SocialNetworks = styled("div")`
 const Logo = styled("div")`
   transition: 0.5s;
   &:hover {
-    color: #767171a9;
+    color: #83725d;
   }
 `
 

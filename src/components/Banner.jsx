@@ -35,9 +35,9 @@ const Button = styled("button")`
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  color: white;
+  color: #101010;
   border: none;
-  background-color: #5e525271;
+  background-color: #d1c09d;
   width: 150px;
   height: 40px;
   border-radius: 4px;
