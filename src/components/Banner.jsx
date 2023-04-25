@@ -37,7 +37,7 @@ const Button = styled("button")`
   font-size: 20px;
   color: white;
   border: none;
-  background-color: #3ab6cc;
+  background-color: #5e525271;
   width: 150px;
   height: 40px;
   border-radius: 4px;

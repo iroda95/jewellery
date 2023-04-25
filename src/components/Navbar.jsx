@@ -45,9 +45,23 @@ const Ul = styled("ul")`
   text-decoration: none;
 `
 const Links = styled(Link)`
-  font-size:14px;
-  color: green;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
 `
+
+const LastLink = styled(Link)`
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.4s;
+  :hover {
+    background-color: #585858;
+    color: white;
+  }
+`
+
 const Navbar = () => {
   const navigate = useNavigate()
   return (
@@ -73,10 +87,10 @@ const Navbar = () => {
           <Links to="/contact">Contact us</Links>
         </li>
         <li>
-          <Link to={'/signin'}>Sign in</Link>
+          <LastLink to={"/signin"}>Sign in</LastLink>
         </li>
       </Ul>
-    </Nav>   
+    </Nav>
   )
 }
 export default Navbar

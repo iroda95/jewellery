@@ -65,7 +65,7 @@ const Img = styled("img")`
 `
 const CardButton = styled("button")`
   border: none;
-  background-color: #3ab6cc;
+  background-color: #5e525271;
   border-radius: 10px;
   padding: 5px 1rem;
   transition: 0.4s;

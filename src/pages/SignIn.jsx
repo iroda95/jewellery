@@ -12,6 +12,7 @@ const Container = styled("div")`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 6rem;
 `
 const Input = styled("input")`
   width: 500px;
@@ -22,7 +23,7 @@ const Input = styled("input")`
 const Form = styled("form")`
   display: flex;
   margin-top: 70px;
-  background-color: #c6ffb8;
+  background-color: #6b6e6e2e;
   flex-direction: column;
   border-radius: 8px;
   padding: 40px;
@@ -32,7 +33,7 @@ const Label = styled("label")`
   margin-top: 10px;
 `
 const Button = styled(Link)`
-  background-color: #5bb872;
+  background-color: #3e37378e;
   margin: 30px;
   margin-left: 100px;
   width: 300px;
@@ -48,7 +49,7 @@ const Button = styled(Link)`
   font-weight: 500;
 
   &:hover {
-    background-color: #508b5f;
+    background-color: #463d3d65;
     color: #fff;
   }
 `
@@ -68,7 +69,7 @@ const SocialNetworks = styled("div")`
 const Logo = styled("div")`
   transition: 0.5s;
   &:hover {
-    color: #039303;
+    color: #767171a9;
   }
 `
 
